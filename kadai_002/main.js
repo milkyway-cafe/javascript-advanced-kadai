@@ -85,7 +85,6 @@ const rankCheck = score => {
 
 const gameOver = id => {
   clearInterval(id);
-  untypedfield.textContent.display = 'none';
   untypedfield.textContent = 'タイムアップ！';
 
     setTimeout(() => {
@@ -125,5 +124,6 @@ start.addEventListener('click', () => {
 
   document.addEventListener('keypress', keyPress);
 });
+
 
 untypedfield.textContent = 'スタートボタンで開始';
